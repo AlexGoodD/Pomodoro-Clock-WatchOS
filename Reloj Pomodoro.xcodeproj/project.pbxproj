@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A911EE762C6924D400E374AC /* Reloj Pomodoro Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A911EE752C6924D400E374AC /* Reloj Pomodoro Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A911EE7B2C6924D400E374AC /* Reloj_PomodoroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911EE7A2C6924D400E374AC /* Reloj_PomodoroApp.swift */; };
+		A911EE7D2C6924D400E374AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911EE7C2C6924D400E374AC /* ContentView.swift */; };
+		A911EE7F2C6924D700E374AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A911EE7E2C6924D700E374AC /* Assets.xcassets */; };
+		A911EE822C6924D700E374AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A911EE812C6924D700E374AC /* Preview Assets.xcassets */; };
+		A911EE8C2C6924D700E374AC /* Reloj_Pomodoro_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911EE8B2C6924D700E374AC /* Reloj_Pomodoro_Watch_AppTests.swift */; };
+		A911EE962C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911EE952C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITests.swift */; };
+		A911EE982C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911EE972C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITestsLaunchTests.swift */; };
+		A911EEA92C69250100E374AC /* RollingNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911EEA82C69250000E374AC /* RollingNumber.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A911EE772C6924D400E374AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A911EE692C6924D400E374AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A911EE742C6924D400E374AC;
+			remoteInfo = "Reloj Pomodoro Watch App";
+		};
+		A911EE882C6924D700E374AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A911EE692C6924D400E374AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A911EE742C6924D400E374AC;
+			remoteInfo = "Reloj Pomodoro Watch App";
+		};
+		A911EE922C6924D700E374AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A911EE692C6924D400E374AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A911EE742C6924D400E374AC;
+			remoteInfo = "Reloj Pomodoro Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A911EE9E2C6924D700E374AC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A911EE762C6924D400E374AC /* Reloj Pomodoro Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A911EE6F2C6924D400E374AC /* Reloj Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reloj Pomodoro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A911EE752C6924D400E374AC /* Reloj Pomodoro Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reloj Pomodoro Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A911EE7A2C6924D400E374AC /* Reloj_PomodoroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reloj_PomodoroApp.swift; sourceTree = "<group>"; };
+		A911EE7C2C6924D400E374AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A911EE7E2C6924D700E374AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A911EE812C6924D700E374AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A911EE872C6924D700E374AC /* Reloj Pomodoro Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reloj Pomodoro Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A911EE8B2C6924D700E374AC /* Reloj_Pomodoro_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reloj_Pomodoro_Watch_AppTests.swift; sourceTree = "<group>"; };
+		A911EE912C6924D700E374AC /* Reloj Pomodoro Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reloj Pomodoro Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A911EE952C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reloj_Pomodoro_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		A911EE972C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reloj_Pomodoro_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A911EEA82C69250000E374AC /* RollingNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingNumber.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A911EE722C6924D400E374AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A911EE842C6924D700E374AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A911EE8E2C6924D700E374AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A911EE682C6924D400E374AC = {
+			isa = PBXGroup;
+			children = (
+				A911EE792C6924D400E374AC /* Reloj Pomodoro Watch App */,
+				A911EE8A2C6924D700E374AC /* Reloj Pomodoro Watch AppTests */,
+				A911EE942C6924D700E374AC /* Reloj Pomodoro Watch AppUITests */,
+				A911EE702C6924D400E374AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A911EE702C6924D400E374AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A911EE6F2C6924D400E374AC /* Reloj Pomodoro.app */,
+				A911EE752C6924D400E374AC /* Reloj Pomodoro Watch App.app */,
+				A911EE872C6924D700E374AC /* Reloj Pomodoro Watch AppTests.xctest */,
+				A911EE912C6924D700E374AC /* Reloj Pomodoro Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A911EE792C6924D400E374AC /* Reloj Pomodoro Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				A911EE7A2C6924D400E374AC /* Reloj_PomodoroApp.swift */,
+				A911EE7C2C6924D400E374AC /* ContentView.swift */,
+				A911EEA82C69250000E374AC /* RollingNumber.swift */,
+				A911EE7E2C6924D700E374AC /* Assets.xcassets */,
+				A911EE802C6924D700E374AC /* Preview Content */,
+			);
+			path = "Reloj Pomodoro Watch App";
+			sourceTree = "<group>";
+		};
+		A911EE802C6924D700E374AC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A911EE812C6924D700E374AC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A911EE8A2C6924D700E374AC /* Reloj Pomodoro Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A911EE8B2C6924D700E374AC /* Reloj_Pomodoro_Watch_AppTests.swift */,
+			);
+			path = "Reloj Pomodoro Watch AppTests";
+			sourceTree = "<group>";
+		};
+		A911EE942C6924D700E374AC /* Reloj Pomodoro Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A911EE952C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITests.swift */,
+				A911EE972C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "Reloj Pomodoro Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A911EE6E2C6924D400E374AC /* Reloj Pomodoro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A911EE9F2C6924D700E374AC /* Build configuration list for PBXNativeTarget "Reloj Pomodoro" */;
+			buildPhases = (
+				A911EE6D2C6924D400E374AC /* Resources */,
+				A911EE9E2C6924D700E374AC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A911EE782C6924D400E374AC /* PBXTargetDependency */,
+			);
+			name = "Reloj Pomodoro";
+			productName = "Reloj Pomodoro";
+			productReference = A911EE6F2C6924D400E374AC /* Reloj Pomodoro.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		A911EE742C6924D400E374AC /* Reloj Pomodoro Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A911EE9B2C6924D700E374AC /* Build configuration list for PBXNativeTarget "Reloj Pomodoro Watch App" */;
+			buildPhases = (
+				A911EE712C6924D400E374AC /* Sources */,
+				A911EE722C6924D400E374AC /* Frameworks */,
+				A911EE732C6924D400E374AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reloj Pomodoro Watch App";
+			productName = "Reloj Pomodoro Watch App";
+			productReference = A911EE752C6924D400E374AC /* Reloj Pomodoro Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A911EE862C6924D700E374AC /* Reloj Pomodoro Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A911EEA22C6924D700E374AC /* Build configuration list for PBXNativeTarget "Reloj Pomodoro Watch AppTests" */;
+			buildPhases = (
+				A911EE832C6924D700E374AC /* Sources */,
+				A911EE842C6924D700E374AC /* Frameworks */,
+				A911EE852C6924D700E374AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A911EE892C6924D700E374AC /* PBXTargetDependency */,
+			);
+			name = "Reloj Pomodoro Watch AppTests";
+			productName = "Reloj Pomodoro Watch AppTests";
+			productReference = A911EE872C6924D700E374AC /* Reloj Pomodoro Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A911EE902C6924D700E374AC /* Reloj Pomodoro Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A911EEA52C6924D700E374AC /* Build configuration list for PBXNativeTarget "Reloj Pomodoro Watch AppUITests" */;
+			buildPhases = (
+				A911EE8D2C6924D700E374AC /* Sources */,
+				A911EE8E2C6924D700E374AC /* Frameworks */,
+				A911EE8F2C6924D700E374AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A911EE932C6924D700E374AC /* PBXTargetDependency */,
+			);
+			name = "Reloj Pomodoro Watch AppUITests";
+			productName = "Reloj Pomodoro Watch AppUITests";
+			productReference = A911EE912C6924D700E374AC /* Reloj Pomodoro Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A911EE692C6924D400E374AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A911EE6E2C6924D400E374AC = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					A911EE742C6924D400E374AC = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					A911EE862C6924D700E374AC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A911EE742C6924D400E374AC;
+					};
+					A911EE902C6924D700E374AC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A911EE742C6924D400E374AC;
+					};
+				};
+			};
+			buildConfigurationList = A911EE6C2C6924D400E374AC /* Build configuration list for PBXProject "Reloj Pomodoro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A911EE682C6924D400E374AC;
+			productRefGroup = A911EE702C6924D400E374AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A911EE6E2C6924D400E374AC /* Reloj Pomodoro */,
+				A911EE742C6924D400E374AC /* Reloj Pomodoro Watch App */,
+				A911EE862C6924D700E374AC /* Reloj Pomodoro Watch AppTests */,
+				A911EE902C6924D700E374AC /* Reloj Pomodoro Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A911EE6D2C6924D400E374AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A911EE732C6924D400E374AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A911EE822C6924D700E374AC /* Preview Assets.xcassets in Resources */,
+				A911EE7F2C6924D700E374AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A911EE852C6924D700E374AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A911EE8F2C6924D700E374AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A911EE712C6924D400E374AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A911EEA92C69250100E374AC /* RollingNumber.swift in Sources */,
+				A911EE7D2C6924D400E374AC /* ContentView.swift in Sources */,
+				A911EE7B2C6924D400E374AC /* Reloj_PomodoroApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A911EE832C6924D700E374AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A911EE8C2C6924D700E374AC /* Reloj_Pomodoro_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A911EE8D2C6924D700E374AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A911EE982C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITestsLaunchTests.swift in Sources */,
+				A911EE962C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A911EE782C6924D400E374AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A911EE742C6924D400E374AC /* Reloj Pomodoro Watch App */;
+			targetProxy = A911EE772C6924D400E374AC /* PBXContainerItemProxy */;
+		};
+		A911EE892C6924D700E374AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A911EE742C6924D400E374AC /* Reloj Pomodoro Watch App */;
+			targetProxy = A911EE882C6924D700E374AC /* PBXContainerItemProxy */;
+		};
+		A911EE932C6924D700E374AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A911EE742C6924D400E374AC /* Reloj Pomodoro Watch App */;
+			targetProxy = A911EE922C6924D700E374AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A911EE992C6924D700E374AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A911EE9A2C6924D700E374AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A911EE9C2C6924D700E374AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Reloj Pomodoro Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = U4C57DZC96;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Reloj Pomodoro";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChavarB.Reloj-Pomodoro.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		A911EE9D2C6924D700E374AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Reloj Pomodoro Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = U4C57DZC96;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Reloj Pomodoro";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChavarB.Reloj-Pomodoro.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		A911EEA02C6924D700E374AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4C57DZC96;
+				INFOPLIST_KEY_CFBundleDisplayName = "Reloj Pomodoro";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChavarB.Reloj-Pomodoro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A911EEA12C6924D700E374AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4C57DZC96;
+				INFOPLIST_KEY_CFBundleDisplayName = "Reloj Pomodoro";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChavarB.Reloj-Pomodoro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A911EEA32C6924D700E374AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4C57DZC96;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChavarB.Reloj-Pomodoro-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reloj Pomodoro Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reloj Pomodoro Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		A911EEA42C6924D700E374AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4C57DZC96;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChavarB.Reloj-Pomodoro-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reloj Pomodoro Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reloj Pomodoro Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		A911EEA62C6924D700E374AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4C57DZC96;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChavarB.Reloj-Pomodoro-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Reloj Pomodoro Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		A911EEA72C6924D700E374AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4C57DZC96;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexChavarB.Reloj-Pomodoro-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Reloj Pomodoro Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A911EE6C2C6924D400E374AC /* Build configuration list for PBXProject "Reloj Pomodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A911EE992C6924D700E374AC /* Debug */,
+				A911EE9A2C6924D700E374AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A911EE9B2C6924D700E374AC /* Build configuration list for PBXNativeTarget "Reloj Pomodoro Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A911EE9C2C6924D700E374AC /* Debug */,
+				A911EE9D2C6924D700E374AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A911EE9F2C6924D700E374AC /* Build configuration list for PBXNativeTarget "Reloj Pomodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A911EEA02C6924D700E374AC /* Debug */,
+				A911EEA12C6924D700E374AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A911EEA22C6924D700E374AC /* Build configuration list for PBXNativeTarget "Reloj Pomodoro Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A911EEA32C6924D700E374AC /* Debug */,
+				A911EEA42C6924D700E374AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A911EEA52C6924D700E374AC /* Build configuration list for PBXNativeTarget "Reloj Pomodoro Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A911EEA62C6924D700E374AC /* Debug */,
+				A911EEA72C6924D700E374AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A911EE692C6924D400E374AC /* Project object */;
+}
