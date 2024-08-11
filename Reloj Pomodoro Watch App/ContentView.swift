@@ -6,23 +6,28 @@
 //
 
 import SwiftUI
+import AVFoundation
+import WatchKit
 
 struct ContentView: View {
-    @State private var tiempoRestante = 1500 // 1 segundo para pruebas
-    @State private var tiempoTrabajo = 1500 // 1 segundo para pruebas
-    @State private var tiempoDescanso = 300 // 2 segundos para pruebas
-    @State private var tiempoDescansoLargo = 1800 // 2 segundos para pruebas
+    @State private var tiempoRestante = 1500 // 1500 segundos (25 min)
+    
+    @State private var tiempoTrabajo = 1500 // 1500 segundos (5 min)
+    @State private var tiempoDescanso = 300 // 300 segundos (5 min)
+    @State private var tiempoDescansoLargo = 900 // 900 segundos (15 min)
     @State private var enTrabajo = true
     @State private var enDescanso = false
     
     @State private var cicloContador = 0 // No. veces que se hace un ciclo
     @State private var progresoActual: CGFloat = 0.0 // Progreso actual
     @State private var temporizador: Timer?
+    
+    @State private var audioPlayer: AVAudioPlayer?
 
     var body: some View {
         ZStack {
             
-            //Fondo blanco
+            // Fondo blanco
             RoundedRectangle(cornerRadius: 32.0)
                 .fill(Color.white)
                 .frame(width: 200, height: 250)
@@ -45,17 +50,29 @@ struct ContentView: View {
 
             // Elementos dentro del reloj
             VStack {
+                
+                
+                
                 RollingNumber(targetValue: $cicloContador)
                     .font(.system(size: 20))
                     .background(enTrabajo ? Color.red : Color.blue.opacity(0.5))
                     .foregroundColor(.white)
                     .clipShape(Circle())
+                    .padding(.bottom, 10)
 
                 Text("\(formatearTiempo(tiempoRestante))")
                     .font(.system(size: 40, weight: .semibold, design: .monospaced))
                     .foregroundColor(.brown)
+                    .padding(.bottom, 10)
+                
+                Text("Created by Alex")
+                    .font(.system(size: 5, weight: .semibold, design: .monospaced))
+                    .foregroundColor(.brown)
 
                 HStack {
+                    
+                    Spacer()
+                    
                     Button(action: temporizador == nil ? iniciarTemporizador : detenerTemporizador) {
                         Image(systemName: temporizador == nil ? "play.fill" : "pause.fill")
                             .font(.system(size: 15))
@@ -64,6 +81,9 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .clipShape(Circle())
                     }
+                    .buttonStyle(PlainButtonStyle())
+
+                    Spacer()
 
                     Button(action: terminarTemporizador) {
                         Image(systemName: "xmark")
@@ -73,15 +93,20 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .clipShape(Circle())
                     }
+                    .buttonStyle(PlainButtonStyle())
+                    
+                    Spacer()
                 }
+                .padding(.bottom, 30)
             }
+            
         }
         .onAppear {
             progresoActual = calcularProgreso()
         }
     }
     
-    // Formato de numeros
+    // Formato de números
 
     func formatearTiempo(_ segundosTotales: Int) -> String {
         let minutos = segundosTotales / 60
@@ -90,6 +115,10 @@ struct ContentView: View {
     }
 
     func iniciarTemporizador() {
+        
+        alertaTemporizador()
+        pulsacionHaptica()
+        
         if temporizador != nil { return }
         
         temporizador = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
@@ -98,28 +127,27 @@ struct ContentView: View {
                 progresoActual = calcularProgreso()
             } else {
                 if enTrabajo {
-                    // Cambiar a descanso al terminar el tiempo de trabajo
                     enTrabajo.toggle()
                     enDescanso = true
                     
+                    alertaFinTemporizador()
+
                     if cicloContador < 9 {
                         tiempoRestante = tiempoDescanso
                     }
                 } else {
-                    // Cambiar a trabajo al terminar el tiempo de descanso
                     enTrabajo.toggle()
                     enDescanso = false
                     
+                    alertaTemporizador()
+                    
                     if cicloContador < 9 {
-                        // Incrementar el contador después de completar un ciclo
                         cicloContador += 1
                     }
 
-                    // Configurar el tiempo de trabajo
                     tiempoRestante = tiempoTrabajo
                 }
                 
-                // Establecer el tiempo de descanso largo si el contador llega a 4 o 8
                 if !enTrabajo {
                     if cicloContador == 4 || cicloContador == 8 {
                         tiempoRestante = tiempoDescansoLargo
@@ -128,7 +156,6 @@ struct ContentView: View {
 
                 progresoActual = 0.0
                 
-                // Detener el temporizador cuando el contador llegue a 9
                 if cicloContador == 9 {
                     temporizador?.invalidate()
                     temporizador = nil
@@ -137,16 +164,14 @@ struct ContentView: View {
         }
     }
 
-
-
-
     func detenerTemporizador() {
+        pulsacionHaptica()
         temporizador?.invalidate()
         temporizador = nil
     }
 
-    // Reinicia todos los elementos
     func terminarTemporizador() {
+        pulsacionHaptica()
         detenerTemporizador()
         tiempoRestante = tiempoTrabajo
         enTrabajo = true
@@ -155,19 +180,50 @@ struct ContentView: View {
     }
 
     func calcularProgreso() -> CGFloat {
-            let tiempoTotal: Int
-            
-            if enTrabajo {
-                tiempoTotal = tiempoTrabajo
-            } else {
-                tiempoTotal = (cicloContador == 4 || cicloContador == 8) ? tiempoDescansoLargo : tiempoDescanso
-            }
-            
-            return CGFloat(tiempoTotal - tiempoRestante) / CGFloat(tiempoTotal)
+        let tiempoTotal: Int
+        
+        if enTrabajo {
+            tiempoTotal = tiempoTrabajo
+        } else {
+            tiempoTotal = (cicloContador == 4 || cicloContador == 8) ? tiempoDescansoLargo : tiempoDescanso
+        }
+        
+        return CGFloat(tiempoTotal - tiempoRestante) / CGFloat(tiempoTotal)
+    }
+    
+    func pulsacionHaptica(){
+        let dispositivo = WKInterfaceDevice.current()
+                dispositivo.play(.click)
+    }
+    
+    
+    func alertaTemporizador() {
+        guard let url = Bundle.main.url(forResource: "alertstart", withExtension: "MP3") else {
+            return
+        }
+
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            print("Error al reproducir el sonido: \(error.localizedDescription)")
         }
     }
+    
+    func alertaFinTemporizador() {
+        guard let url = Bundle.main.url(forResource: "alertend", withExtension: "MP3") else {
+            return
+        }
+
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            print("Error al reproducir el sonido: \(error.localizedDescription)")
+        }
+    }
+}
 
 #Preview {
     ContentView()
 }
-

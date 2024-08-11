@@ -16,6 +16,8 @@
 		A911EE962C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911EE952C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITests.swift */; };
 		A911EE982C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911EE972C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITestsLaunchTests.swift */; };
 		A911EEA92C69250100E374AC /* RollingNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911EEA82C69250000E374AC /* RollingNumber.swift */; };
+		A969B6742C6967C000CCA1A1 /* alertstart.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = A969B6722C6967C000CCA1A1 /* alertstart.MP3 */; };
+		A969B6752C6967C000CCA1A1 /* alertend.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = A969B6732C6967C000CCA1A1 /* alertend.MP3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		A911EE952C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reloj_Pomodoro_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		A911EE972C6924D700E374AC /* Reloj_Pomodoro_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reloj_Pomodoro_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A911EEA82C69250000E374AC /* RollingNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingNumber.swift; sourceTree = "<group>"; };
+		A969B6722C6967C000CCA1A1 /* alertstart.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alertstart.MP3; sourceTree = "<group>"; };
+		A969B6732C6967C000CCA1A1 /* alertend.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alertend.MP3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 			children = (
 				A911EE7A2C6924D400E374AC /* Reloj_PomodoroApp.swift */,
 				A911EE7C2C6924D400E374AC /* ContentView.swift */,
+				A969B6732C6967C000CCA1A1 /* alertend.MP3 */,
+				A969B6722C6967C000CCA1A1 /* alertstart.MP3 */,
 				A911EEA82C69250000E374AC /* RollingNumber.swift */,
 				A911EE7E2C6924D700E374AC /* Assets.xcassets */,
 				A911EE802C6924D700E374AC /* Preview Content */,
@@ -286,6 +292,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A969B6742C6967C000CCA1A1 /* alertstart.MP3 in Resources */,
+				A969B6752C6967C000CCA1A1 /* alertend.MP3 in Resources */,
 				A911EE822C6924D700E374AC /* Preview Assets.xcassets in Resources */,
 				A911EE7F2C6924D700E374AC /* Assets.xcassets in Resources */,
 			);
